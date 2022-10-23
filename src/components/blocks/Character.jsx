@@ -17,6 +17,10 @@ const Container = styled.div`
 
   color: #120824;
   flex-shrink: 1;
+
+  @media screen and (max-width: 1600px){
+    padding-left: ${({padding}) => padding - 100}px;
+  }
 `
 
 const Character = (props) => {
@@ -26,7 +30,7 @@ const Character = (props) => {
 
     return (
         <Container weight={weight} padding={props.padding}>
-            <img src={props.img_path}/>
+            <img src={props.img_path} alt={''}/>
             <div>{props.text}</div>
         </Container>
     );

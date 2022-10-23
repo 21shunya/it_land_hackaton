@@ -10,9 +10,9 @@ const AuthorBlock = () => {
                 <img src={'photo.svg'} alt={''}/>
             </div>
             <div className={cl.info}>
-                <img src={'name.svg'}/>
+                <img src={'name.svg'} alt={''}/>
                 <div className={cl.text}>
-                    <img className={cl.ellipse} src={'ellipse.svg'}/>
+                    <img className={cl.ellipse} src={'ellipse.svg'} alt={''}/>
                     <div>
                         {author.text.map(item =>
                             <div key={item}>{item}</div>

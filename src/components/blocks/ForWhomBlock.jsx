@@ -11,7 +11,7 @@ const ForWhomBlock = () => {
             <div className={cl.characters}>
                 {for_whom.characters.map((item, index) =>
                     <Character
-                        key={item}
+                        key={index}
                         img_path={item.img_path}
                         text={item.text}
                         padding={index*padding}

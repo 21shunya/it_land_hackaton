@@ -14,7 +14,7 @@ const MainBlock = () => {
                 <PrimaryBtn />
             </div>
             <div className={cl.book_description}>
-                <img src={'books.svg'}/>
+                <img src={'books.svg'} alt={''}/>
                 <div>{main_block.book_description}</div>
             </div>
         </div>

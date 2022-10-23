@@ -5,11 +5,11 @@ import {about_block} from '../../data'
 const AboutBlock = () => {
     return (
         <div className={cl.wrapper}>
-            <img src={'people.svg'}/>
+            <img src={'people.svg'} alt={''}/>
             <div className={cl.about_info}>
                 <div className={cl.title}>{about_block.title}</div>
                 <div className={cl.text}>{about_block.text.map(item =>
-                    <div>{item}</div>
+                    <div key={item}>{item}</div>
                 )}</div>
             </div>
         </div>

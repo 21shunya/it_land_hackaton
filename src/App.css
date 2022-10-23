@@ -3,9 +3,15 @@
   flex-direction: column;
   background-image: url(../public/substrate.svg);
   background-repeat: no-repeat;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: clip;
   padding: 48px 162px;
   gap: 148px;
+}
+
+@font-face {
+  font-family: 'Neue Metana Next Free Personal';
+  src: local('Neue Metana Next Free Personal'), url(./fonts/NeueMetanaNext-SemiBold.ttf) format('ttf');
 }
 
 @media screen and (max-width: 1600px){

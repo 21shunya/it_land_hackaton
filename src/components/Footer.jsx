@@ -18,7 +18,22 @@ const Inscription = styled.div `
   line-height: 412px;
   color: #C1AAC6;
   opacity: 0.5;
-  width: 1920px;
+  width: 2000px;
+
+  animation: run 7s infinite linear;
+
+  &:after {
+    content: ${({text}) => text};
+  }
+
+  @keyframes run {
+    0% {
+      transform: translateX(2000px);
+    }
+    100% {
+      transform: translateX(-2000px);
+    }
+  }
 `
 
 const StyledText = styled.div `
@@ -35,8 +50,8 @@ const Footer = () => {
     return (
         <Container>
             <Inscription>{footer.big_inscription}</Inscription>
-            <StyledText>{footer.info.map(item =>
-                <div>{item}</div>
+            <StyledText>{footer.info.map((item, index) =>
+                <div key={index}>{item}</div>
             )}</StyledText>
         </Container>
     );

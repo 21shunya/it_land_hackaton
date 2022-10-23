@@ -50,3 +50,16 @@ export const price = {
         {title: 'Доступ к гайду навсегда', price: '4000 руб.', color: '#D3738A'},
     ]
 }
+
+export const moc_caption = 'Здесь вы можете ознакомиться с пробными страницами'
+
+const tagline_content = 'Не упускай важные моменты жизни, не теряй время, не теряй деньги. С этим тебе поможет этот справочник.   Не упускай важные моменты жизни, не теряй время, не теряй деньги. С этим тебе поможет этот справочник'
+
+export const tagline = [
+    {text: tagline_content,
+    tilt: '7deg',
+    top: '150px', },
+    {text: tagline_content,
+    tilt:  '-8deg',
+    top: '100px'}
+]

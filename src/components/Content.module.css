@@ -11,13 +11,13 @@
 .four_blocks {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     align-self: stretch;
 }
 
 .tagline {
-    width: 1920px;
+    height: 400px;
 }
 
 .price_author_wrapper {
@@ -41,5 +41,11 @@
 
 .img {
     margin-top: -120px;
+}
+
+@media screen and (max-width: 1600px){
+    .img {
+        width: 1400px;
+    }
 }
 
