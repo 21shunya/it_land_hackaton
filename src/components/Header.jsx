@@ -17,13 +17,18 @@ const Navbar = styled.div`
 `
 
 const Header = () => {
-    const tabs = ['О справочнике', 'Для кого', 'Содержание', 'Цены', 'Об авторе']
+    const tabs = [
+        {name: 'О справочнике', id: '#about'},
+        {name: 'Для кого', id: '#for'},
+        {name: 'Содержание', id: '#content'},
+        {name: 'Цены', id: '#price'},
+        {name:'Об авторе', id: '#author'}]
     return (
         <StyledDiv>
             <img src={'logo.svg'} alt={''}/>
             <Navbar>
                 {tabs.map(tab =>
-                    <NavButton key={tab}>{tab}</NavButton>
+                    <NavButton key={tab} name={tab.name} id={tab.id} />
                 )}
             </Navbar>
         </StyledDiv>

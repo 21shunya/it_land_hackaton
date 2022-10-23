@@ -18,7 +18,7 @@ const Content = () => {
                     <AboutBlock />
                     <ForWhomBlock />
                 </div>
-                <img className={cl.img} src={'directory_content.svg'} alt={''}/>
+                <img id='content' className={cl.img} src={'directory_content.svg'} alt={''}/>
             </div>
             <div className={cl.tagline}>
                 {tagline.map((item,idx) =>

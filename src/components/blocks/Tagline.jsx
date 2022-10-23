@@ -23,7 +23,7 @@ const Ticker = styled.div`
 `
 
 const Text = styled.span`
-  animation: run 7s infinite linear;
+  animation: run 15s infinite linear;
 
   &:after {
     content: ${({text}) => text};

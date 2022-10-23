@@ -6,7 +6,7 @@ import Character from "./Character";
 const ForWhomBlock = () => {
     const padding = 304
     return (
-        <div className={cl.wrapper}>
+        <div id='for' className={cl.wrapper}>
             <div className={cl.title}>{for_whom.title}</div>
             <div className={cl.characters}>
                 {for_whom.characters.map((item, index) =>

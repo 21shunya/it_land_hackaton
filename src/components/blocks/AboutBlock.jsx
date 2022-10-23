@@ -4,7 +4,7 @@ import {about_block} from '../../data'
 
 const AboutBlock = () => {
     return (
-        <div className={cl.wrapper}>
+        <div id='about' className={cl.wrapper}>
             <img src={'people.svg'} alt={''}/>
             <div className={cl.about_info}>
                 <div className={cl.title}>{about_block.title}</div>

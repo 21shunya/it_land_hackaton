@@ -5,7 +5,7 @@ import PriceCard from "./PriceCard";
 
 const PriceBlock = () => {
     return (
-        <div className={cl.wrapper}>
+        <div id='price' className={cl.wrapper}>
             <div className={cl.title}>{price.title}</div>
             <div className={cl.benefits}>
                 {price.benefits.map(item =>

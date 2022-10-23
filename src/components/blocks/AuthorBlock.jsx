@@ -4,7 +4,7 @@ import {author} from '../../data'
 
 const AuthorBlock = () => {
     return (
-        <div className={cl.wrapper}>
+        <div id='author' className={cl.wrapper}>
             <div className={cl.photo_wrapper}>
                 <div>{author.title}</div>
                 <img src={'photo.svg'} alt={''}/>

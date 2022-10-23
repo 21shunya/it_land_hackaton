@@ -11,7 +11,8 @@
 
 @font-face {
   font-family: 'Neue Metana Next Free Personal';
-  src: local('Neue Metana Next Free Personal'), url(./fonts/NeueMetanaNext-SemiBold.ttf) format('ttf');
+  src: local('Neue Metana Next Free Personal'),
+  url(./fonts/NeueMetanaNext-SemiBold.ttf) format('truetype');
 }
 
 @media screen and (max-width: 1600px){
